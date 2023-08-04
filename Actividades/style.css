@@ -1,0 +1,12 @@
+
+@media (max-width: 960px){
+    * {
+        background-color: rgb(244, 255, 174);
+    }
+}
+
+@media (min-width: 960px){
+    * {
+        background-color: rgb(120, 235, 250);
+    }
+}

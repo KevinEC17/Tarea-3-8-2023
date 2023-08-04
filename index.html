@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <main>
+            <header>Encabezado</header>
+            <nav>
+                <a href="#">Inicio</a>
+                <a href="#">Contactos</a>
+            </nav>
+            <div class="contPrincipal">
+                <div id="contenedor">
+                    <header>Encabezado</header>
+                    <nav>Barra de navegacion</nav>
+                    <main>Contenido principal</main>
+                    <aside>Barra lateral</aside>
+                    <footer>Pie de pagina</footer>
+                </div>
+                <div id="contenedor1">
+                    <p>Esto es un parrafo</p>
+                </div>
+                <div class="contenedor1">
+
+                </div>
+                <!-- div.cont1*3 -->
+                <div class="contenedor2">
+
+                </div>
+                <div class="contenedor3">
+
+                </div>
+            </div>
+            
+        </main>
+    </body>
+    <!-- # class -->
+    <!-- . id -->
+    <!-- * general -->
+    <style>
+        #contenedor {
+            background-color: aqua;
+            display: inline-block;
+        }
+        #contenedor header, #contenedor nav {
+            background-color: rgb(230, 255, 3);
+            color: chocolate;
+            font-size: 20px;
+            display: inline-block;
+        }
+        #contenedor1 {
+            background-color: red;
+            color: white;
+            display: inline-block;
+        }
+        .contenedor1 {
+            background-color: green;
+            width: 100px;
+            height: 100px;
+        }
+        .contenedor2 {
+            background-color: blue;
+            width: 100px;
+            height: 100px;
+            position: absolute;
+            left: 200px;
+        }
+        .contenedor3 {
+            background-color: orange;
+            width: 100px;
+            height: 100px;
+        }
+        nav {
+            margin: 10px 0px 10px 10px;
+        }
+        a{
+            margin-right: 10px;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+</html>

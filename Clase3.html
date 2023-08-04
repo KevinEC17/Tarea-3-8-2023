@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        <h1>Tablas</h1>
+        <table border="2" style="border-collapse:collapse;">
+            <caption>
+                Tablas y atributos
+            </caption>
+            <thead>
+                <tr>
+                    <th>Celda1</th>
+                    <th>Celda2</th>
+                    <th>Celda3</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td rowspan="2">1</td>
+                    <td>2</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td colspan="2">1</td>
+                    <td>2</td>
+                    <td>3</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td>Footer</td>
+                    <td>Copyright</td>
+                </tr>
+            </tfoot>
+        </table>
+        <ul>
+            <li>Elemento 1</li>
+            <li>Elemento 2</li>
+            <li>Elemento 3</li>
+            <li>Elemento 4</li>
+        </ul>
+        <ol reversed type="1" start="2">
+            <li>Elemento 1</li>
+            <li>Elemento 2</li>
+            <li>Elemento 3</li>
+            <li>Elemento 4</li>
+        </ol>
+        <div class="contImg">
+            <h3>Esto es un texto</h3>
+        </div>
+        <div>
+            <form action="./pag1.html" style="margin-top: 50 px;">
+                
+                <fieldset>
+                    <legend>Formularios</legend>
+                    <label>
+                        Texto1:
+                        <input type="text" id="texto 1">
+                    </label>
+                    <label>
+                        Radio:
+                        <input type="radio" id="texto 2">
+                    </label>
+                    <label>
+                        Check:
+                        <input type="checkbox" id="texto 3">
+                    </label>
+                    <br>
+                    <label>
+                        Fecha:
+                        <input type="date" id="texto 1">
+                    </label>
+                    <label>
+                        Color:
+                        <input type="color" id="texto 1">
+                    </label>
+                    <button>Enviar</button>
+                </fieldset>
+            </form>
+        </div>
+        <!-- 1rem = 16px -->
+    </main>
+</body>
+<style>
+    ol li {
+        list-style-type: "\1F440";
+    }
+    .contImg {
+        border: solid;
+        width: 20rem;
+        height: 15rem;
+        background-image: url(https://d2a5isokysfowx.cloudfront.net/wp-content/uploads/2022/03/que-se-necesita-estudiar-para-ser-programador-scaled-1200x900.jpg);
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    .contImg h3 {
+        position: relative;
+        top: 75%;
+        color: black;
+        text-align: center;
+    }
+</style>
+</html>

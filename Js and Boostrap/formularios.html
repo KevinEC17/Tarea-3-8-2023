@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <main>
+            <h1>Formularios</h1>
+            <div>
+                <form action="./show.html">
+                    <fieldset>
+                        <legend>Formulario de inscripción</legend>
+                        <div class="form-nombres">
+                            <label>
+                                Ingrese sus dos nombres:
+                                <br>
+                                <input type="text" style="width: 200px;" name="nombres">
+                            </label>
+                        </div>
+                        <div class="form-apellidos">
+                            <label>
+                                Ingrese sus dos apellidos:
+                                <br>
+                                <input type="text" style="width: 200px;" name="apellidos">
+                            </label>
+                        </div>
+                        <div class="form-cedula">
+                            <label>
+                                Ingrese su número de cédula:
+                                <br>
+                                <input type="texto" style="width: 200px;" name="cedula">
+                            </label>
+                        </div>
+                        <div class="form-genero">
+                            <label>
+                                Ingrese su género:
+                                <br>
+                                <input type="radio" class="radio" name="genero">
+                                Hombre
+                                <input type="radio" class="radio" name="genero">
+                                Mujer
+                                <input type="radio" class="radio" name="genero">
+                                No especificar
+                            </label>
+                        </div>
+                        <div class="form-estado-civil">
+                            <label>
+                                Seleccione su estado civil:
+                                <br>
+                                <input type="checkbox" class="check" name="estadoCivil">
+                                Soltero/a
+                                <br>
+                                <input type="checkbox" class="check" name="estadoCivil">
+                                Casado/a
+                                <br>
+                                <input type="checkbox" class="check" name="estadoCivil">
+                                Divorsiado/a
+                                <br>
+                                <input type="checkbox" class="check" name="estadoCivil">
+                                Viudo/a
+                            </label>
+                        </div>
+                        <div>
+                            <input type="submit">
+                        </div>
+                        
+                    </fieldset>
+                </form>
+                <div>
+                    <input type="text" class="nCiudad">
+                    <button onclick="search()">Buscar</button>
+                </div>
+            </div>
+        </main>
+        <script src="./main.js"></script>
+    </body>
+    <style>
+        .form-nombres, .form-apellidos, .form-cedula, .form-genero, .form-estado-civil {
+            padding: 10px;
+        }
+        .radio, .check {
+            margin-top: 10px;
+        }
+    </style>
+</html>
