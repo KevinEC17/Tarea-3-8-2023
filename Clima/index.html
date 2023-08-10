@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>El Clima</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    </head>
+    <body>
+        <main>
+            <h1>El clima</h1>
+            <div id="app">
+                <label>
+                    Ingrese la ciudad:
+                    <input v-model="consulta">
+                </label>
+                <button class="ms-3">Buscar</button>
+                <div class="d-flex align-items-center justify-content-center">
+                    <div class="card bg-info m-lg-2" style="width: 20rem; height: 20rem" v-for="cuidades in datos">
+                        <p class="card-text">{{ cuidades.name }}</p>
+                        <p class="card-text mb-0">Temperatura:</p>
+                        <p class="card-text mb-0">Máxma: {{ cuidades.temperatures.max }}</p>
+                        <p class="card-text">Mínima: {{ cuidades.temperatures.min }}</p>
+                        <p class="card-text">Clima: {{ cuidades.stateSky.description }}</p>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+        <script src="./main.js"></script>
+    </body>
+</html>
